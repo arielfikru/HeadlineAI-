@@ -28,14 +28,14 @@ def get_source(url):
 # Function to summarize the scraped content using a generative AI model
 def summarize_and_extract_info(html_content, source):
     # Configure the generative AI with the provided API key
-    genai.configure(api_key='AIzaSyBbIXunjiwerHsfUGwzhQwor1pG00-gBt0')
+    genai.configure(api_key='ENTER_YOUR_GEMINI_AI_KEY_HERE')
 
     # Define generation configuration for the AI model
     generation_config = {
         "temperature": 1,
         "top_p": 0.95,
         "top_k": 64,
-        "max_output_tokens": 8192,
+        "max_output_tokens": 2048,
         "response_mime_type": "text/plain",
     }
 
